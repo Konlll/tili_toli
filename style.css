@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #123456;
+}
+
+td{
+    width: 263px;
+    height: 176px;
+}
+
+.btn{
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cell0{
+    background-image: url("img/image_part_0.jpg");
+}
+.cell1{
+    background-image: url("img/image_part_1.jpg");
+}
+.cell2{
+    background-image: url("img/image_part_2.jpg");
+}
+.cell3{
+    background-image: url("img/image_part_3.jpg");
+}
+.cell4{
+    background-image: url("img/image_part_4.jpg");
+}
+.cell5{
+    background-image: url("img/image_part_5.jpg");
+}
+.cell6{
+    background-image: url("img/image_part_6.jpg");
+}
+.cell7{
+    background-image: url("img/image_part_7.jpg");
+}
+.cell8{
+    background-image: url("img/image_part_8.jpg");
+}
+.cell9{
+    background-image: url("img/image_part_9.jpg");
+}
+.cell10{
+    background-image: url("img/image_part_10.jpg");
+}
+.cell11{
+    background-image: url("img/image_part_11.jpg");
+}
+.cell12{
+    background-image: url("img/image_part_12.jpg");
+}
+.cell13{
+    background-image: url("img/image_part_13.jpg");
+}
+.cell14{
+    background-image: url("img/image_part_14.jpg");
+}
