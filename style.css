@@ -6,9 +6,9 @@ body{
     background-color: #123456;
 }
 
-td{
-    width: 263px;
-    height: 176px;
+table{
+    width: 70%;
+    height: 100vh;
 }
 
 .btn{
@@ -22,51 +22,93 @@ td{
 }
 
 a{
+    color: #fff;
     text-decoration: none;
 }
 
+.carousel{
+    position: absolute;
+    width: 70%;
+    z-index: 10;
+}
+
+#prev, #next{
+    display: none;
+}
+
+.carousel img{
+    width: 40%;
+}
+
+header.navigation{
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    justify-content: center;
+    align-items: space-between;
+    font-size: 28px;
+}
+header.navigation a{
+    display: inline-block;
+    height: 30px;
+}
+
+i.fa-bars{
+    cursor: pointer;
+    color: #fff;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 32px;
+}
+
 .cell0{
-    background-image: url("img/image_part_0.jpg");
+    background-image: url("img/renault/image_part_0.jpg");
 }
 .cell1{
-    background-image: url("img/image_part_1.jpg");
+    background-image: url("img/renault/image_part_1.jpg");
 }
 .cell2{
-    background-image: url("img/image_part_2.jpg");
+    background-image: url("img/renault/image_part_2.jpg");
 }
 .cell3{
-    background-image: url("img/image_part_3.jpg");
+    background-image: url("img/renault/image_part_3.jpg");
 }
 .cell4{
-    background-image: url("img/image_part_4.jpg");
+    background-image: url("img/renault/image_part_4.jpg");
 }
 .cell5{
-    background-image: url("img/image_part_5.jpg");
+    background-image: url("img/renault/image_part_5.jpg");
 }
 .cell6{
-    background-image: url("img/image_part_6.jpg");
+    background-image: url("img/renault/image_part_6.jpg");
 }
 .cell7{
-    background-image: url("img/image_part_7.jpg");
+    background-image: url("img/renault/image_part_7.jpg");
 }
 .cell8{
-    background-image: url("img/image_part_8.jpg");
+    background-image: url("img/renault/image_part_8.jpg");
 }
 .cell9{
-    background-image: url("img/image_part_9.jpg");
+    background-image: url("img/renault/image_part_9.jpg");
 }
 .cell10{
-    background-image: url("img/image_part_10.jpg");
+    background-image: url("img/renault/image_part_10.jpg");
 }
 .cell11{
-    background-image: url("img/image_part_11.jpg");
+    background-image: url("img/renault/image_part_11.jpg");
 }
 .cell12{
-    background-image: url("img/image_part_12.jpg");
+    background-image: url("img/renault/image_part_12.jpg");
 }
 .cell13{
-    background-image: url("img/image_part_13.jpg");
+    background-image: url("img/renault/image_part_13.jpg");
 }
 .cell14{
-    background-image: url("img/image_part_14.jpg");
+    background-image: url("img/renault/image_part_14.jpg");
 }

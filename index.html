@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tili toli magamtól</title>
+    <title>Tili toli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <a href="#" id="next">Next</a>
+    <a href="#" id="prev">Prev</a>
+    <div class="carousel">
+        <img src="img_full/img.jpg" alt="Renault Talisman" id="item1">
+        <img src="img_full/sea.jpg" alt="Tenger látkép" id="item2">
+        <img src="img_full/dog.jpg" alt="Alaszkai malamut" id="item3">
+        <img src="img_full/torony.jpeg" alt="Eifel torony" id="item4">
+        <img src="img_full/alpok.jpg" alt="Alpok" id="item5">
+        <img src="img_full/forma1.jpg" alt="Forma 1" id="item6">
+    </div>
+
+    <i class="fas fa-bars" id="menuButton"></i>
+    <header class="navigation" id="navigation">
+        <a href="#" class="menuList">Képválasztó</a>
+    </header>
+
     <table class="table" id="table"></table>
 
     <div class="btn-group">
@@ -14,6 +32,8 @@
         <button class="btn" id="kever">Keverés</button>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="jquery.waterwheelCarousel.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+/* Tili toli műkédési mechanikája */
+
 // Gombok bekérése és click esemény hozzáadása
 const keveroGomb = document.getElementById("kever");
 keveroGomb.addEventListener("click", kever);
@@ -87,3 +89,36 @@ function switch_cell(row, column) {
         }
     }
 }
+
+/* Tili toli működési mechanikája vége */
+
+/* Hamburger menü működése */
+const menuButton = document.getElementById("menuButton");
+menuButton.addEventListener("click", openMenu);
+const navigation = document.getElementById("navigation");
+document.querySelector("body").addEventListener("click", closeMenu);
+
+function openMenu(){
+    navigation.style.display = "flex";
+}
+
+function closeMenu(e){
+    if(navigation.style.display == "flex"){
+        if(e.target.className !== "fas fa-bars" && e.target.className != "menuList"){
+            navigation.style.display = "none";
+        }
+    }
+}
+
+/* Image slider működése --> JQuery kód */
+let carousel = $(".carousel").waterwheelCarousel({
+    flankingItems: 3
+});
+$("#prev").click(function(){
+    carousel.prev();
+    return false;
+});
+$("#next").click(function(){
+    carousel.next();
+    return false;
+});
