@@ -118,6 +118,8 @@ function alap() {
     let trs = document.getElementsByTagName("tr");
     let tds = document.getElementsByTagName("td");
 
+    // Cellaosztályok hozzáadása, hogy a megfelelő képet jelenítse meg
+
     for (let j = 0; j < trs.length; j++) {
         for (let k = 0; k < tds.length; k++) {
             if (selectedImg == "item1") {
@@ -142,6 +144,8 @@ function alap() {
     }
 }
 
+// Cellák cseréje
+
 function csere(td1, td2) {
     try {
         let currentTd = document.getElementById(td1).className;
@@ -150,6 +154,8 @@ function csere(td1, td2) {
     }
     catch (err) { }
 }
+
+// Cellák keverése
 
 function kever() {
     let trs = document.getElementsByTagName("tr");
@@ -164,6 +170,8 @@ function kever() {
         }
     }
 }
+
+// Képes cella kicserélése az üres cellával ha mellete van
 
 function switch_cell(row, column) {
     if (selectedImg == "item1") {
