@@ -35,22 +35,16 @@ let selectedImg = "item1";
 document.body.addEventListener("click", function (e) {
     if (e.target.className == "item1") {
         selectedImg = "item1";
-        console.log(selectedImg);
     } if (e.target.className == "item2") {
         selectedImg = "item2";
-        console.log(selectedImg);
     } if (e.target.className == "item3") {
         selectedImg = "item3";
-        console.log(selectedImg);
     } if (e.target.className == "item4") {
         selectedImg = "item4";
-        console.log(selectedImg);
     } if (e.target.className == "item5") {
         selectedImg = "item5";
-        console.log(selectedImg);
     } if (e.target.className == "item6") {
         selectedImg = "item6";
-        console.log(selectedImg);
     }
 });
 function chooseImg() {
@@ -62,6 +56,42 @@ function chooseImg() {
 }
 
 /* Tili toli műkédési mechanikája */
+
+// Villámnézet működési mechanikája
+let villamgomb = document.getElementById("villam");
+villamgomb.addEventListener("click", villamnezet);
+function villamnezet() {
+    let img = document.createElement("img");
+    let table = document.getElementById("table");
+    let villamnezetdiv = document.getElementById("villamnezet");
+    let btnGroup = document.getElementById("btn-group");
+
+    villamnezetdiv.style.display = "block";
+    table.style.display = "none";
+    btnGroup.style.display = "none";
+    villamnezetdiv.appendChild(img);
+
+    if (selectedImg == "item1") {
+        img.src = "img_full/img.jpg";
+    } else if(selectedImg == "item2"){
+        img.src = "img_full/sea.jpg";
+    } else if(selectedImg == "item3"){
+        img.src = "img_full/dog.jpg";
+    } else if(selectedImg == "item4"){
+        img.src = "img_full/torony.jpeg";
+    } else if(selectedImg == "item5"){
+        img.src = "img_full/alpok.jpg";
+    } else if(selectedImg == "item6"){
+        img.src = "img_full/forma1.jpg";
+    }
+
+    setTimeout(function () {
+        table.style.display = "table";
+        btnGroup.style.display = "block";
+        villamnezetdiv.style.display = "none";
+        villamnezetdiv.removeChild(villamnezetdiv.childNodes[0]);
+    }, 3000);
+}
 
 // Gombok bekérése és click esemény hozzáadása
 const keveroGomb = document.getElementById("kever");

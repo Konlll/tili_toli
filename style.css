@@ -4,6 +4,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: #123456;
+    overflow-x: hidden;
 }
 
 /*table{
@@ -77,6 +78,17 @@ i.fa-bars{
 
 .carousel img{
     width: 100%;
+}
+
+.villamnezet{
+    width: 70%;
+    height: 70%;
+}
+.villamnezet img{
+    width: 70%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
 }
 
 .cell0{background-image:url(img/renault/image_part_0.jpg); width: 263px; height: 176px;}.cell1{background-image:url(img/renault/image_part_1.jpg); width: 263px; height: 176px;}.cell2{background-image:url(img/renault/image_part_2.jpg); width: 263px; height: 176px;}.cell3{background-image:url(img/renault/image_part_3.jpg); width: 263px; height: 176px;}.cell4{background-image:url(img/renault/image_part_4.jpg); width: 263px; height: 176px;}.cell5{background-image:url(img/renault/image_part_5.jpg); width: 263px; height: 176px;}.cell6{background-image:url(img/renault/image_part_6.jpg); width: 263px; height: 176px;}.cell7{background-image:url(img/renault/image_part_7.jpg); width: 263px; height: 176px;}.cell8{background-image:url(img/renault/image_part_8.jpg); width: 263px; height: 176px;}.cell9{background-image:url(img/renault/image_part_9.jpg); width: 263px; height: 176px;}.cell10{background-image:url(img/renault/image_part_10.jpg); width: 263px; height: 176px;}.cell11{background-image:url(img/renault/image_part_11.jpg); width: 263px; height: 176px;}.cell12{background-image:url(img/renault/image_part_12.jpg); width: 263px; height: 176px;}.cell13{background-image:url(img/renault/image_part_13.jpg); width: 263px; height: 176px;}.cell14{background-image:url(img/renault/image_part_14.jpg); width: 263px; height: 176px;}
