@@ -45,8 +45,6 @@ let selectedImg = "item1";
 document.body.addEventListener("click", function (e) {
     if (e.target.className == "item1") {
         selectedImg = "item1";
-    } if (e.target.className == "item2") {
-        selectedImg = "item2";
     } if (e.target.className == "item3") {
         selectedImg = "item3";
     } if (e.target.className == "item4") {
@@ -83,8 +81,6 @@ function villamnezet() {
 
     if (selectedImg == "item1") {
         img.src = "img_full/img.jpg";
-    } else if (selectedImg == "item2") {
-        img.src = "img_full/sea.jpg";
     } else if (selectedImg == "item3") {
         img.src = "img_full/dog.jpg";
     } else if (selectedImg == "item4") {
@@ -134,9 +130,6 @@ function alap() {
         for (let k = 0; k < tds.length; k++) {
             if (selectedImg == "item1") {
                 tds[k].classList.add(`cell${k}`);
-            }
-            if (selectedImg == "item2") {
-                tds[k].classList.add(`cell${k + 16}`);
             }
             if (selectedImg == "item3") {
                 tds[k].classList.add(`cell${k + 32}`);
@@ -232,38 +225,6 @@ function switch_cell(row, column) {
             // ellenőrzi hogy az üres cella fennt van-e
             if (row > 0) {
                 if (document.getElementById(`${row - 1}${column}`).className === "cell15") {
-                    csere(`${row}${column}`, `${row - 1}${column}`);
-                }
-            }
-        }
-    }
-    if (selectedImg == "item2") {
-        let cell = document.getElementById(`${row}${column}`);
-        let cell_class = cell.className;
-
-
-        if (cell_class !== "cell31") {
-            // ellenőrzi hogy az üres cella jobb oldalt van-e
-            if (column < 3) {
-                if (document.getElementById(`${row}${column + 1}`).className === "cell31") {
-                    csere(`${row}${column}`, `${row}${column + 1}`);
-                }
-            }
-            // ellenőrzi hogy az üres cella bal oldalt van-e
-            if (column > 0) {
-                if (document.getElementById(`${row}${column - 1}`).className === "cell31") {
-                    csere(`${row}${column}`, `${row}${column - 1}`);
-                }
-            }
-            // ellenőrzi hogy az üres cella lent van-e
-            if (row < 3) {
-                if (document.getElementById(`${row + 1}${column}`).className === "cell31") {
-                    csere(`${row}${column}`, `${row + 1}${column}`);
-                }
-            }
-            // ellenőrzi hogy az üres cella fennt van-e
-            if (row > 0) {
-                if (document.getElementById(`${row - 1}${column}`).className === "cell31") {
                     csere(`${row}${column}`, `${row - 1}${column}`);
                 }
             }
