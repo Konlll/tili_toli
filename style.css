@@ -101,9 +101,9 @@ i.fa-bars{
     justify-content: center;
     align-items: space-between;
     position: fixed;
-    top: 50px;
+    top: 10px;
     right: 0;
-    width: 200px;
+    width: 230px;
     font-size: 24px;
     color: #fff;
 }
