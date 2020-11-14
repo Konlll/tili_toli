@@ -1,3 +1,13 @@
+// Üdvözlő szöveg animation
+const welcomeDiv = document.getElementById("welcome");
+welcomeDiv.style.animation = "zoomInDown";
+welcomeDiv.style.animationDuration = "1s";
+setTimeout(function(){
+    welcomeDiv.style.display = "none";
+    document.getElementById("menuButton").style.display = "table";
+    document.getElementById("carousel").style.opacity = "1";
+}, 4000);
+
 /* Hamburger menü működése */
 const menuButton = document.getElementById("menuButton");
 menuButton.addEventListener("click", openMenu);
