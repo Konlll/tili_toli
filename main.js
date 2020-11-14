@@ -171,7 +171,7 @@ function kever() {
             return false;
         }
         
-        timeDiv.innerHTML = `${minutes}:${seconds}`;
+        timeDiv.innerHTML = `Idő: ${minutes}:${seconds}`;
         if (seconds == 59) {
             seconds = -1;
             minutes += 1;
