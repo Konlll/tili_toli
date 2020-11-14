@@ -73,15 +73,15 @@ function villamnezet() {
 
     if (selectedImg == "item1") {
         img.src = "img_full/img.jpg";
-    } else if(selectedImg == "item2"){
+    } else if (selectedImg == "item2") {
         img.src = "img_full/sea.jpg";
-    } else if(selectedImg == "item3"){
+    } else if (selectedImg == "item3") {
         img.src = "img_full/dog.jpg";
-    } else if(selectedImg == "item4"){
+    } else if (selectedImg == "item4") {
         img.src = "img_full/torony.jpeg";
-    } else if(selectedImg == "item5"){
+    } else if (selectedImg == "item5") {
         img.src = "img_full/alpok.jpg";
-    } else if(selectedImg == "item6"){
+    } else if (selectedImg == "item6") {
         img.src = "img_full/forma1.jpg";
     }
 
@@ -155,9 +155,30 @@ function csere(td1, td2) {
     catch (err) { }
 }
 
-// Cellák keverése
+// Cellák keverése és az idő elindítása
+
 
 function kever() {
+    let minutes = 0;
+    let seconds = 0;
+    let time = setInterval(timer, 1000);
+    let timeDiv = document.getElementById("time");
+    function timer() {
+        timeDiv.style.display = 'flex';
+        seconds += 1;
+        if(seconds < 10){
+            timeDiv.innerHTML = `Idő: ${minutes}:0${seconds}`;
+            return false;
+        }
+        
+        timeDiv.innerHTML = `${minutes}:${seconds}`;
+        if (seconds == 59) {
+            seconds = -1;
+            minutes += 1;
+        }
+    }
+    console.log(time);
+
     let trs = document.getElementsByTagName("tr");
     let tds = document.getElementsByTagName("td");
     for (let tr = 0; tr < trs.length; tr++) {
