@@ -6,7 +6,7 @@ setTimeout(function(){
     welcomeDiv.style.display = "none";
     document.getElementById("menuButton").style.display = "table";
     document.getElementById("carousel").style.opacity = "1";
-}, 4000);
+}, 3000);
 
 /* Hamburger menü működése */
 const menuButton = document.getElementById("menuButton");
