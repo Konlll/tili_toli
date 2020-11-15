@@ -38,7 +38,7 @@ a{
     font-size: 4rem;
 }
 
-.welcome h1{
+h1.text-shadow{
     text-shadow: 4px 4px 4px rgba(255,255,255,.5);
 }
 
